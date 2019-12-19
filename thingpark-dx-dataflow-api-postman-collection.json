@@ -1,0 +1,452 @@
+{
+    "id": "35350c9e1464bef309087fefe02834ac",
+    "name": "ThingPark DX Dataflow API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "f32688cefe41ed59a847ba0fd67925a1",
+            "name": "Bridge dataflows retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows",
+            "description": "Retrieves the list of Bridge dataflows available in the scope.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "89ca2715c81e00c0375b4155ff65f9b8",
+            "name": "Bridge dataflow creation",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows",
+            "description": "Creates a new Bridge dataflow.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "bridgeDataflow",
+                    "description": "Contents of the Bridge dataflow to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "1ef868313df3acf97b2aeddb5f4f4a01",
+            "name": "Bridge dataflow retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows\/{bridgeDataflowRef}",
+            "description": "Retrieves the Bridge dataflow corresponding to the provided order ref, if that order is within authorized scopes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "bridgeDataflowRef",
+                    "description": "Ref of the Bridge dataflow to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "878257c962ed8234a3489d6f0c12808f",
+            "name": "Bridge dataflow update",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows\/{bridgeDataflowRef}",
+            "description": "Updates the Bridge dataflow corresponding to the provided Bridge dataflow ref, if that dataflow is within authorized scopes. Note that when updating a dataflow, all existing attributs must be provided next to your changes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "bridgeDataflowRef",
+                    "description": "Ref of the Bridge dataflow to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bridgeDataflow",
+                    "description": "Contents of the Bridge dataflow to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "8eac243b6ed954fee1c58e9a6baebe8e",
+            "name": "Bridge dataflow deletion",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows\/{bridgeDataflowRef}",
+            "description": "Deletes the Bridge dataflow corresponding to the provided Bridge dataflow ref, if that dataflow is within authorized scopes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "bridgeDataflowRef",
+                    "description": "Ref of the Bridge dataflow to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "97a22d0d1fe87913c682c270dac048f4",
+            "name": "Constant maps retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps",
+            "description": "Retrieves the list of constant maps (both system-provided and custom) available in the scope.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "dbe5be7ffe662a74f5b4ad2cdc898c6b",
+            "name": "Constant maps creation",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps",
+            "description": "Creates a new custom constant map for the subscriber.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "constantMap",
+                    "description": "Contents of the constant map to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "fd8252d63f08bcea5fcbba58db14f933",
+            "name": "Constant map retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps\/{constantMapRef}",
+            "description": "Retrieves the constant map corresponding to the provided constant map ref..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "constantMapRef",
+                    "description": "Ref of the constant map to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "080e4d7877c29ba4d2d56a9abaa3a1a3",
+            "name": "Constant map update",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps\/{constantMapRef}",
+            "description": "Updates the constant map corresponding to the provided constant map ref. This is only authorized if the constant map has been created by the subscriber (not provided by the system).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "constantMapRef",
+                    "description": "Ref of the constant map to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "constantMap",
+                    "description": "Contents of the constant map to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "516797f555614b13f00dd0395ba269ce",
+            "name": "Constant map deletion",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps\/{constantMapRef}",
+            "description": "Deletes the constant map corresponding to the provided constant map ref. This is only authorized if the constant map has been created by the subscriber (not provided by the system).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "constantMapRef",
+                    "description": "Ref of the constant map to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "ebd13b127468cfb2777309b7b6ca4fe7",
+            "name": "Binder processor classes retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/binderClasses",
+            "description": "Retrieves the list of system-wide processor classes providing binder (e.g. with a device) behaviour.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b487b1746d741672f1429fe13eef0ae",
+            "name": "Driver processor classes retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/driverClasses",
+            "description": "Retrieves the list of system-wide processor classes providing driver behaviour.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "9846e1f5b775377754a2ee9ac8d583d0",
+            "name": "Connector processor classes retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/connectorClasses",
+            "description": "Retrieves the list of system-wide processor classes providing connector behaviour.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "9919c3551e9c1b028c386c68659ed6bc",
+            "name": "Dataflow events retrieval",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/events",
+            "description": "Retrieves the list of events for all configured dataflows in scope.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dataflowRef",
+                    "description": "Ref of the dataflow for which events should be retrieved.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        },
+        {
+            "id": "82d3f8c0a674ed9f6e3ce6ba30361aa5",
+            "name": "Uplink data reception",
+            "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/uplinkMessages",
+            "description": "Endpoint to be used by the LRC to push uplink data in order to use ThingPark X dataflows.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "data",
+                    "description": "Uplink data frame in ThingPark XML or JSON format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "rawModeData": ""
+        }
+    ]
+}
