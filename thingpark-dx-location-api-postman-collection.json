@@ -1,0 +1,229 @@
+{
+    "id": "bd47e0bd15a8d56c151d93dcf5c0a302",
+    "name": "ThingPark DX Location API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "dc5baebc9d4f505e2c41781c2445072b",
+            "name": "Feed request",
+            "url": "httpsdx-api.thingpark.com\/location\/v110\/feeds",
+            "description": "Feeds the platform with geolocation data. Data is then dispatched and processed based on available information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "feedRequest",
+                    "description": "Contents of the feed request.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bd47e0bd15a8d56c151d93dcf5c0a302",
+            "rawModeData": ""
+        },
+        {
+            "id": "c09a2fc79e287ab69d8b360aae49563b",
+            "name": "Module configurations retrieval",
+            "url": "httpsdx-api.thingpark.com\/location\/v110\/moduleConfigs",
+            "description": "Retrieves the list of existing module configurations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bd47e0bd15a8d56c151d93dcf5c0a302",
+            "rawModeData": ""
+        },
+        {
+            "id": "72f5ccc63f62230fef16498de8c8f096",
+            "name": "Module configuration creation",
+            "url": "httpsdx-api.thingpark.com\/location\/v110\/moduleConfigs",
+            "description": "Creates a new module configuration.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "moduleConfig",
+                    "description": "Contents of the module configuration to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bd47e0bd15a8d56c151d93dcf5c0a302",
+            "rawModeData": ""
+        },
+        {
+            "id": "c529e52de8ea70425316d7fe66ffbef3",
+            "name": "Module configuration retrieval",
+            "url": "httpsdx-api.thingpark.com\/location\/v110\/moduleConfigs\/{moduleConfigRef}",
+            "description": "Retrieves the module configuration corresponding to the provided ref.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "moduleConfigRef",
+                    "description": "Ref of the module configuration to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bd47e0bd15a8d56c151d93dcf5c0a302",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e0534e46bb08904cf65ab44daa0609c",
+            "name": "Module configuration update",
+            "url": "httpsdx-api.thingpark.com\/location\/v110\/moduleConfigs\/{moduleConfigRef}",
+            "description": "Updates the module configuration corresponding to the provided ref.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "moduleConfigRef",
+                    "description": "Ref of the module configuration to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "moduleConfig",
+                    "description": "Contents of the module configuration to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bd47e0bd15a8d56c151d93dcf5c0a302",
+            "rawModeData": ""
+        },
+        {
+            "id": "7baf5e592eea95a930fbc012b3cdfcb9",
+            "name": "Module configuration deletion",
+            "url": "httpsdx-api.thingpark.com\/location\/v110\/moduleConfigs\/{moduleConfigRef}",
+            "description": "Deletes the module configuration corresponding to the provided ref.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "moduleConfigRef",
+                    "description": "Ref of the module configuration to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bd47e0bd15a8d56c151d93dcf5c0a302",
+            "rawModeData": ""
+        },
+        {
+            "id": "0265946f7f71c279876174bb4087829f",
+            "name": "Tracker command sending",
+            "url": "httpsdx-api.thingpark.com\/location\/v110\/trackerCommands",
+            "description": "Sends a downlink command to a supported Abeeway tracker.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "trackerCommand",
+                    "description": "Contents of the tracker command.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bd47e0bd15a8d56c151d93dcf5c0a302",
+            "rawModeData": ""
+        }
+    ]
+}
