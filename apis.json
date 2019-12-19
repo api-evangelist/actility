@@ -1,0 +1,152 @@
+{
+    "name": "Actility",
+    "description": "Actility is the leader in low power wide area (LoRaWAN and 3GPP) network connectivity management for the Internet of Things: the ThingPark platform",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28250-actility.jpg",
+    "tags": [
+        "agriculture",
+        "api provider",
+        "energy",
+        "geolocation",
+        "have api",
+        "industrial",
+        "internet of things",
+        "isp",
+        "lpwan",
+        "networks",
+        "no api definition",
+        "parking",
+        "profile",
+        "relative data",
+        "sensors",
+        "telecommunications"
+    ],
+    "created": "2019-12-18",
+    "modified": "2019-12-18",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/actility\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "ThingPark DX Admin API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28250-actility.jpg",
+            "humanURL": "https:\/\/www.actility.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-admin-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-admin-api-openapi.json"
+                }
+            ]
+        },
+        {
+            "name": "ThingPark DX Location API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28250-actility.jpg",
+            "humanURL": "https:\/\/www.actility.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-location-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-location-api-openapi.json"
+                }
+            ]
+        },
+        {
+            "name": "ThingPark DX Maker API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28250-actility.jpg",
+            "humanURL": "https:\/\/www.actility.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-maker-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-maker-api-openapi.json"
+                }
+            ]
+        },
+        {
+            "name": "ThingPark DX Dataflow API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28250-actility.jpg",
+            "humanURL": "https:\/\/www.actility.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-dataflow-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-dataflow-api-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/www.actility.com\/blog\/feed\/"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/actility"
+        },
+        {
+            "type": "Blog",
+            "url": "https:\/\/www.actility.com\/blog\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/actility"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/www.actility.com\/developer\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/dx-api.thingpark.com\/core\/latest\/swagger-ui\/index.html?shortUrl=tpdx-core-api-contract.json"
+        },
+        {
+            "type": "Facebook",
+            "url": "https:\/\/www.facebook.com\/Actility\/"
+        },
+        {
+            "type": "Linkedin",
+            "url": "https:\/\/www.linkedin.com\/company\/actility\/"
+        },
+        {
+            "type": "Partners",
+            "url": "https:\/\/www.actility.com\/partners\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/Actility"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.actility.com"
+        },
+        {
+            "type": "Youtube",
+            "url": "https:\/\/www.youtube.com\/user\/actility1"
+        }
+    ]
+}
