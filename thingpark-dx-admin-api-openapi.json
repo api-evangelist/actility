@@ -1,0 +1,165 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "ThingPark DX Admin API",
+        "description": "API providing token generation and administration features for the ThingPark DX API Platform.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsdx-api.thingpark.com\/admin\/v140\/api"
+    ],
+    "paths": {
+        "\/oauth\/token": {
+            "post": {
+                "summary": "Token Generation",
+                "description": "Generates and retrieves a token for a client.",
+                "operationId": "GeneratesAndRetrievesATokenForAClient",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "grant_type",
+                        "in": "formData",
+                        "description": "Type of the OAuth2 grant workflow. Its value should always be 'client_credentials', which is the only workflow currently supported."
+                    },
+                    {
+                        "name": "client_id",
+                        "in": "formData",
+                        "description": "Id of the client. Its format should be 'thingpark-profile\/thingpark-login', e.g. 'dev1-api\/john.smith@actility.com'."
+                    },
+                    {
+                        "name": "client_secret",
+                        "in": "formData",
+                        "description": "Secret of the client. Its value should be the password for the ThingPark login specified in the 'client_id' parameter."
+                    },
+                    {
+                        "name": "renewToken",
+                        "in": "query",
+                        "description": "Forces the token to be renewed. If false, and a token already exists for the client, it will be reused. If true, a new token is always returned. Default is false."
+                    },
+                    {
+                        "name": "validityPeriod",
+                        "in": "query",
+                        "description": "Validity of the new token. Possible values are '5minutes', '12hours', '7days', '90days' or 'infinite' (never expires, until revocation). Default is '7days'. Note that in order to properly use an 'infinite' token, the user password MUST NOT be updated at any time (thus requiring an API-Only user account or a non-expiring-password security policy)."
+                    }
+                ]
+            }
+        },
+        "\/oauth\/revoke_token": {
+            "post": {
+                "summary": "Token Revocation",
+                "description": "Revokes a token.",
+                "operationId": "RevokesAToken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "access_token",
+                        "in": "query",
+                        "description": "Value of the token to revoke."
+                    }
+                ]
+            }
+        },
+        "\/oauth\/tokeninfo": {
+            "get": {
+                "summary": "Token Info Retrieval",
+                "description": "Retrieves information about a valid token.",
+                "operationId": "RetrievesInformationAboutAValidToken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "access_token",
+                        "in": "query",
+                        "description": "Value of the token to revoke."
+                    }
+                ]
+            }
+        },
+        "\/profiles": {
+            "get": {
+                "summary": "Profiles Retrieval",
+                "description": "Retrieves all available profiles. By default only retrieves ACTILITY-owned profiles.",
+                "operationId": "RetrievesAllAvailableProfilesByDefaultOnlyRetrievesActilityownedProfiles",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/profiles\/{profileId}": {
+            "get": {
+                "summary": "Profile Retrieval",
+                "description": "Retrieves the profile corresponding to the provided profile Id.",
+                "operationId": "RetrievesTheProfileCorrespondingToTheProvidedProfileId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "profileId",
+                        "in": "path",
+                        "description": "Id of the profile to retrieve."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Token": {
+                "type": "object",
+                "properties": {
+                    "access_token": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "token_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "expires_in": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "scope": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "jti": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "client_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "provider_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "customer_id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Profile": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "homepage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "owner": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
