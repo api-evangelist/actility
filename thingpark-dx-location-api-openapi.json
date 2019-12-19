@@ -1,0 +1,460 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "ThingPark DX Location API",
+        "description": "API providing feed, configuration and query capabilities on top of the ThingPark Location solution.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsdx-api.thingpark.com\/location\/v110"
+    ],
+    "paths": {
+        "\/feeds": {
+            "post": {
+                "summary": "Feed request",
+                "description": "Feeds the platform with geolocation data. Data is then dispatched and processed based on available information.",
+                "operationId": "FeedsThePlatformWithGeolocationDataDataIsThenDispatchedAndProcessedBasedOnAvailableIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedRequest",
+                        "in": "body",
+                        "description": "Contents of the feed request."
+                    }
+                ]
+            }
+        },
+        "\/moduleConfigs": {
+            "get": {
+                "summary": "Module configurations retrieval",
+                "description": "Retrieves the list of existing module configurations.",
+                "operationId": "RetrievesTheListOfExistingModuleConfigurations",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Module configuration creation",
+                "description": "Creates a new module configuration.",
+                "operationId": "CreatesANewModuleConfiguration",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "moduleConfig",
+                        "in": "body",
+                        "description": "Contents of the module configuration to create."
+                    }
+                ]
+            }
+        },
+        "\/moduleConfigs\/{moduleConfigRef}": {
+            "get": {
+                "summary": "Module configuration retrieval",
+                "description": "Retrieves the module configuration corresponding to the provided ref.",
+                "operationId": "RetrievesTheModuleConfigurationCorrespondingToTheProvidedRef",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "moduleConfigRef",
+                        "in": "path",
+                        "description": "Ref of the module configuration to retrieve."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Module configuration update",
+                "description": "Updates the module configuration corresponding to the provided ref.",
+                "operationId": "UpdatesTheModuleConfigurationCorrespondingToTheProvidedRef",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "moduleConfigRef",
+                        "in": "path",
+                        "description": "Ref of the module configuration to retrieve."
+                    },
+                    {
+                        "name": "moduleConfig",
+                        "in": "body",
+                        "description": "Contents of the module configuration to create."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Module configuration deletion",
+                "description": "Deletes the module configuration corresponding to the provided ref.",
+                "operationId": "DeletesTheModuleConfigurationCorrespondingToTheProvidedRef",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "moduleConfigRef",
+                        "in": "path",
+                        "description": "Ref of the module configuration to retrieve."
+                    }
+                ]
+            }
+        },
+        "\/trackerCommands": {
+            "post": {
+                "summary": "Tracker command sending",
+                "description": "Sends a downlink command to a supported Abeeway tracker.",
+                "operationId": "SendsADownlinkCommandToASupportedAbeewayTracker",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "trackerCommand",
+                        "in": "body",
+                        "description": "Contents of the tracker command."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Feed": {
+                "type": "object",
+                "properties": {
+                    "deviceEUI": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "time": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "coordinates": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "FeedInputForGenericSolver": {
+                "type": "object",
+                "properties": {
+                    "solverInputType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sequenceNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "port": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "receptionTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SF": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "packets": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dynamicMotionState": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "temperatureMeasure": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "accelerometerMeasures": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "gyroscopeMeasures": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "barometerMeasure": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "lastContext": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "FeedNetwork": {
+                "type": "object",
+                "properties": {
+                    "SSID": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RSSI": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "FeedPacket": {
+                "type": "object",
+                "properties": {
+                    "baseStationId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "antennaId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "antennaCoordinates": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "antennaHeight": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SNR": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RSSI": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "barometerMeasure": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "arrivalSeconds": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "arrivalAdditionalNanos": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "FeedPayload": {
+                "type": "object",
+                "properties": {
+                    "deviceProfileId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "payloadEncoded": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ModuleConfig": {
+                "type": "object",
+                "properties": {
+                    "ref": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "deviceEUIList": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "moduleConfigType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ProcessedFeed": {
+                "type": "object",
+                "properties": {
+                    "deviceProfileId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "payloadEncoded": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sequenceNumber": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "receptionTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SF": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dynamicMotionState": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "temperatureMeasure": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "lastContext": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ProcessedFeedPacket": {
+                "type": "object",
+                "properties": {
+                    "baseStationId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "antennaCoordinates": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SNR": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RSSI": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "RawPositionByGenericSolver": {
+                "type": "object",
+                "properties": {
+                    "rawPositionType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "coordinates": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "horizontalAccuracy": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "verticalAccuracy": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "horizontalDilution": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "verticalDilution": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "northVelocity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "eastVelocity": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ResolvedPosition": {
+                "type": "object",
+                "properties": {
+                    "dxProfileId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "customerId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "deviceEUI": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "time": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "coordinates": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "age": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "validityState": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "horizontalAccuracy": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "verticalAccuracy": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ResolvedTrackerAsAssetTracker": {
+                "type": "object",
+                "properties": {
+                    "firmwareVersion": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "messageType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "trackingMode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "gpsScanMode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sensorMode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "periodicPositionInterval": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "batteryLevel": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "activityCount": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "TrackerCommand": {
+                "type": "object",
+                "properties": {
+                    "deviceEUIList": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "trackerCommandType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
