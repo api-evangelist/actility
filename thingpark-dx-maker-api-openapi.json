@@ -1,0 +1,310 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "ThingPark DX Maker API",
+        "description": "API providing features for device makers such as pre-provisioning on standalone Join Servers.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsdx-api.thingpark.com\/maker\/v011\/api"
+    ],
+    "paths": {
+        "\/factoryDevices": {
+            "get": {
+                "summary": "Factory devices retrieval",
+                "description": "Retrieves all factory devices.",
+                "operationId": "RetrievesAllFactoryDevices",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "deviceEUI",
+                        "in": "query",
+                        "description": "EUI of the factory device to retrieve."
+                    },
+                    {
+                        "name": "pageIndex",
+                        "in": "query",
+                        "description": "If set, enables pagination and returns only the 100 factory devices of the specified page. First available page index is 1."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Factory device creation",
+                "description": "Creates a factory device.",
+                "operationId": "CreatesAFactoryDevice",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "deviceFactory",
+                        "in": "body",
+                        "description": "Contents of the factory device."
+                    }
+                ]
+            }
+        },
+        "\/factoryDevices\/{factoryDeviceRef}": {
+            "get": {
+                "summary": "Factory device retrieval",
+                "description": "Retrieves the factory device corresponding to the provided factoryDeviceRef.",
+                "operationId": "RetrievesTheFactoryDeviceCorrespondingToTheProvidedFactorydeviceref",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "factoryDeviceRef",
+                        "in": "path",
+                        "description": "Ref of the factory device to retrieve."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Factory device update",
+                "description": "Updates the factory device corresponding to the provided factoryDeviceRef.",
+                "operationId": "UpdatesTheFactoryDeviceCorrespondingToTheProvidedFactorydeviceref",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "factoryDeviceRef",
+                        "in": "path",
+                        "description": "Ref of the factory device to retrieve."
+                    },
+                    {
+                        "name": "device",
+                        "in": "body",
+                        "description": "Contents of the factory device to update."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Factory device deletion",
+                "description": "Deletes the factory device corresponding to the provided factoryDeviceRef.",
+                "operationId": "DeletesTheFactoryDeviceCorrespondingToTheProvidedFactorydeviceref",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "factoryDeviceRef",
+                        "in": "path",
+                        "description": "Ref of the factory device to retrieve."
+                    }
+                ]
+            }
+        },
+        "\/appKeyGens": {
+            "post": {
+                "summary": "AppKey generation",
+                "description": "Generate some encrypted VendorKeys with an HSM. Encrypted VendorKeys can be decrypted with the private part of provided RSA key. A VendorKey is a concatenation of an AppKey (128 bits) and hsmEncryptedAppKey (128 bits). ",
+                "operationId": "GenerateSomeEncryptedVendorkeysWithAnHsmEncryptedVendorkeysCanBeDecryptedWithThePrivat",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "number",
+                        "in": "query",
+                        "description": "Define the number of AppKey generated."
+                    },
+                    {
+                        "name": "appKeyGen",
+                        "in": "body",
+                        "description": "Configuration for AppKey generation."
+                    }
+                ]
+            }
+        },
+        "\/asKeys": {
+            "get": {
+                "summary": "AS keys retrieval",
+                "description": "Retrieves the list of AS keys existing within authorized scopes.",
+                "operationId": "RetrievesTheListOfAsKeysExistingWithinAuthorizedScopes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "pageIndex",
+                        "in": "query",
+                        "description": "If set, enables pagination and returns only the 100 factory devices of the specified page. First available page index is 1."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "AS key creation",
+                "description": "Creates a new AS key.",
+                "operationId": "CreatesANewAsKey",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "asKey",
+                        "in": "body",
+                        "description": "Contents of the AS key to create."
+                    }
+                ]
+            }
+        },
+        "\/asKeys\/{asKeyRef}": {
+            "get": {
+                "summary": "AS key retrieval",
+                "description": "Retrieves the AS key corresponding to the provided AS key ref, if that AS key is within authorized scopes.",
+                "operationId": "RetrievesTheAsKeyCorrespondingToTheProvidedAsKeyRefIfThatAsKeyIsWithinAuthorizedSc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "asKeyRef",
+                        "in": "path",
+                        "description": "Ref of the AS key to retrieve."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "AS key update",
+                "description": "Updates the AS key corresponding to the provided asKey ref, if that AS key is within authorized scopes.",
+                "operationId": "UpdatesTheAsKeyCorrespondingToTheProvidedAskeyRefIfThatAsKeyIsWithinAuthorizedScope",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "asKeyRef",
+                        "in": "path",
+                        "description": "Ref of the AS key to retrieve."
+                    },
+                    {
+                        "name": "asKey",
+                        "in": "body",
+                        "description": "Contents of the AS key to create."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "AS key deletion",
+                "description": "Deletes the AS key corresponding to the provided asKeyRef, if that AS key is within authorized scopes.",
+                "operationId": "DeletesTheAsKeyCorrespondingToTheProvidedAskeyrefIfThatAsKeyIsWithinAuthorizedScopes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "asKeyRef",
+                        "in": "path",
+                        "description": "Ref of the AS key to retrieve."
+                    }
+                ]
+            }
+        },
+        "\/hsmGroups": {
+            "get": {
+                "summary": "HSM groups retrieval",
+                "description": "Retrieves all HSM groups.",
+                "operationId": "RetrievesAllHsmGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "pageIndex",
+                        "in": "query",
+                        "description": "If set, enables pagination and returns only the 100 factory devices of the specified page. First available page index is 1."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ASKey": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ref": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hsmGroupId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rsaEncryptedASKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rsaPublicKey": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AppKeyGen": {
+                "type": "object",
+                "properties": {
+                    "hsmGroupId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hsmAppKeyVersion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rsaPublicKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rsaEncryptedVendorKey": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "FactoryDevice": {
+                "type": "object",
+                "properties": {
+                    "ref": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "deviceEUI": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "applicationKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "joinEUI": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hsmGroupId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asKeyId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "administrativeInfo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "secureElement": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "deviceToken": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "HSMGroup": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
