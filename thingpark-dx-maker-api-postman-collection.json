@@ -1,0 +1,413 @@
+{
+    "id": "3d7dd354e1befda40192534624616bfb",
+    "name": "ThingPark DX Maker API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "2f813780b991fc4b0563964529c3f634",
+            "name": "Factory devices retrieval",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices",
+            "description": "Retrieves all factory devices.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "deviceEUI",
+                    "description": "EUI of the factory device to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageIndex",
+                    "description": "If set, enables pagination and returns only the 100 factory devices of the specified page. First available page index is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d74f799e3241ca396acc2da0d8f687c",
+            "name": "Factory device creation",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices",
+            "description": "Creates a factory device.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "deviceFactory",
+                    "description": "Contents of the factory device.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "97111539b9d34ef7188ea624e06e029d",
+            "name": "Factory device retrieval",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices\/{factoryDeviceRef}",
+            "description": "Retrieves the factory device corresponding to the provided factoryDeviceRef.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "factoryDeviceRef",
+                    "description": "Ref of the factory device to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "0397d83c1e3102b78d4ac310b9b0d44f",
+            "name": "Factory device update",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices\/{factoryDeviceRef}",
+            "description": "Updates the factory device corresponding to the provided factoryDeviceRef.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "factoryDeviceRef",
+                    "description": "Ref of the factory device to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "device",
+                    "description": "Contents of the factory device to update.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "7d154dff82c7d7e03fc3f3537548ab19",
+            "name": "Factory device deletion",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices\/{factoryDeviceRef}",
+            "description": "Deletes the factory device corresponding to the provided factoryDeviceRef.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "factoryDeviceRef",
+                    "description": "Ref of the factory device to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "4f0abc4c884d1059458b48b2654cb2cd",
+            "name": "AppKey generation",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/appKeyGens",
+            "description": "Generate some encrypted VendorKeys with an HSM. Encrypted VendorKeys can be decrypted with the private part of provided RSA key. A VendorKey is a concatenation of an AppKey (128 bits) and hsmEncryptedAppKey (128 bits). ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "number",
+                    "description": "Define the number of AppKey generated.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "appKeyGen",
+                    "description": "Configuration for AppKey generation.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "7d38b8dc05b163982c6b02b8768bc277",
+            "name": "AS keys retrieval",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys",
+            "description": "Retrieves the list of AS keys existing within authorized scopes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "pageIndex",
+                    "description": "If set, enables pagination and returns only the 100 factory devices of the specified page. First available page index is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd0481f55831fe5f3cc40a5b547f5cd6",
+            "name": "AS key creation",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys",
+            "description": "Creates a new AS key.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "asKey",
+                    "description": "Contents of the AS key to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "47d616dc2e4c88ad82bd029717cf6729",
+            "name": "AS key retrieval",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys\/{asKeyRef}",
+            "description": "Retrieves the AS key corresponding to the provided AS key ref, if that AS key is within authorized scopes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "asKeyRef",
+                    "description": "Ref of the AS key to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "e987e427b7ee1a3ee0a8480278ad9247",
+            "name": "AS key update",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys\/{asKeyRef}",
+            "description": "Updates the AS key corresponding to the provided asKey ref, if that AS key is within authorized scopes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "asKeyRef",
+                    "description": "Ref of the AS key to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "asKey",
+                    "description": "Contents of the AS key to create.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab373faceafa33a974aebc7f07c8c34a",
+            "name": "AS key deletion",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys\/{asKeyRef}",
+            "description": "Deletes the AS key corresponding to the provided asKeyRef, if that AS key is within authorized scopes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "asKeyRef",
+                    "description": "Ref of the AS key to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        },
+        {
+            "id": "0fa33be266a44e3ae59a8e651774acc0",
+            "name": "HSM groups retrieval",
+            "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/hsmGroups",
+            "description": "Retrieves all HSM groups.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "pageIndex",
+                    "description": "If set, enables pagination and returns only the 100 factory devices of the specified page. First available page index is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "rawModeData": ""
+        }
+    ]
+}
