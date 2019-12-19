@@ -1,0 +1,379 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "ThingPark DX Dataflow API",
+        "description": "API for managing ThingPark X dataflows and associating those dataflows with ThingPark devices.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsdx-api.thingpark.com\/dataflow\/v021\/api"
+    ],
+    "paths": {
+        "\/bridgeDataflows": {
+            "get": {
+                "summary": "Bridge dataflows retrieval",
+                "description": "Retrieves the list of Bridge dataflows available in the scope.",
+                "operationId": "RetrievesTheListOfBridgeDataflowsAvailableInTheScope",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Bridge dataflow creation",
+                "description": "Creates a new Bridge dataflow.",
+                "operationId": "CreatesANewBridgeDataflow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bridgeDataflow",
+                        "in": "body",
+                        "description": "Contents of the Bridge dataflow to create."
+                    }
+                ]
+            }
+        },
+        "\/bridgeDataflows\/{bridgeDataflowRef}": {
+            "get": {
+                "summary": "Bridge dataflow retrieval",
+                "description": "Retrieves the Bridge dataflow corresponding to the provided order ref, if that order is within authorized scopes.",
+                "operationId": "RetrievesTheBridgeDataflowCorrespondingToTheProvidedOrderRefIfThatOrderIsWithinAuthor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bridgeDataflowRef",
+                        "in": "path",
+                        "description": "Ref of the Bridge dataflow to retrieve."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Bridge dataflow update",
+                "description": "Updates the Bridge dataflow corresponding to the provided Bridge dataflow ref, if that dataflow is within authorized scopes. Note that when updating a dataflow, all existing attributs must be provided next to your changes.",
+                "operationId": "UpdatesTheBridgeDataflowCorrespondingToTheProvidedBridgeDataflowRefIfThatDataflowIsWi",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bridgeDataflowRef",
+                        "in": "path",
+                        "description": "Ref of the Bridge dataflow to retrieve."
+                    },
+                    {
+                        "name": "bridgeDataflow",
+                        "in": "body",
+                        "description": "Contents of the Bridge dataflow to create."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Bridge dataflow deletion",
+                "description": "Deletes the Bridge dataflow corresponding to the provided Bridge dataflow ref, if that dataflow is within authorized scopes.",
+                "operationId": "DeletesTheBridgeDataflowCorrespondingToTheProvidedBridgeDataflowRefIfThatDataflowIsWi",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bridgeDataflowRef",
+                        "in": "path",
+                        "description": "Ref of the Bridge dataflow to retrieve."
+                    }
+                ]
+            }
+        },
+        "\/constantMaps": {
+            "get": {
+                "summary": "Constant maps retrieval",
+                "description": "Retrieves the list of constant maps (both system-provided and custom) available in the scope.",
+                "operationId": "RetrievesTheListOfConstantMapsBothSystemprovidedAndCustomAvailableInTheScope",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Constant maps creation",
+                "description": "Creates a new custom constant map for the subscriber.",
+                "operationId": "CreatesANewCustomConstantMapForTheSubscriber",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "constantMap",
+                        "in": "body",
+                        "description": "Contents of the constant map to create."
+                    }
+                ]
+            }
+        },
+        "\/constantMaps\/{constantMapRef}": {
+            "get": {
+                "summary": "Constant map retrieval",
+                "description": "Retrieves the constant map corresponding to the provided constant map ref..",
+                "operationId": "RetrievesTheConstantMapCorrespondingToTheProvidedConstantMapRef",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "constantMapRef",
+                        "in": "path",
+                        "description": "Ref of the constant map to retrieve."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Constant map update",
+                "description": "Updates the constant map corresponding to the provided constant map ref. This is only authorized if the constant map has been created by the subscriber (not provided by the system).",
+                "operationId": "UpdatesTheConstantMapCorrespondingToTheProvidedConstantMapRefThisIsOnlyAuthorizedIfT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "constantMapRef",
+                        "in": "path",
+                        "description": "Ref of the constant map to retrieve."
+                    },
+                    {
+                        "name": "constantMap",
+                        "in": "body",
+                        "description": "Contents of the constant map to create."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Constant map deletion",
+                "description": "Deletes the constant map corresponding to the provided constant map ref. This is only authorized if the constant map has been created by the subscriber (not provided by the system).",
+                "operationId": "DeletesTheConstantMapCorrespondingToTheProvidedConstantMapRefThisIsOnlyAuthorizedIfT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "constantMapRef",
+                        "in": "path",
+                        "description": "Ref of the constant map to retrieve."
+                    }
+                ]
+            }
+        },
+        "\/binderClasses": {
+            "get": {
+                "summary": "Binder processor classes retrieval",
+                "description": "Retrieves the list of system-wide processor classes providing binder (e.g. with a device) behaviour.",
+                "operationId": "RetrievesTheListOfSystemwideProcessorClassesProvidingBinderEgWithADeviceBehaviour",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/driverClasses": {
+            "get": {
+                "summary": "Driver processor classes retrieval",
+                "description": "Retrieves the list of system-wide processor classes providing driver behaviour.",
+                "operationId": "RetrievesTheListOfSystemwideProcessorClassesProvidingDriverBehaviour",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/connectorClasses": {
+            "get": {
+                "summary": "Connector processor classes retrieval",
+                "description": "Retrieves the list of system-wide processor classes providing connector behaviour.",
+                "operationId": "RetrievesTheListOfSystemwideProcessorClassesProvidingConnectorBehaviour",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/events": {
+            "get": {
+                "summary": "Dataflow events retrieval",
+                "description": "Retrieves the list of events for all configured dataflows in scope.",
+                "operationId": "RetrievesTheListOfEventsForAllConfiguredDataflowsInScope",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dataflowRef",
+                        "in": "query",
+                        "description": "Ref of the dataflow for which events should be retrieved."
+                    }
+                ]
+            }
+        },
+        "\/uplinkMessages": {
+            "post": {
+                "summary": "Uplink data reception",
+                "description": "Endpoint to be used by the LRC to push uplink data in order to use ThingPark X dataflows.",
+                "operationId": "EndpointToBeUsedByTheLrcToPushUplinkDataInOrderToUseThingparkXDataflows",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "Uplink data frame in ThingPark XML or JSON format."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ConstantMap": {
+                "type": "object",
+                "properties": {
+                    "ref": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "constants": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Event": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataflowRef": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "dataflowInstanceRef": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Processor": {
+                "type": "object",
+                "properties": {
+                    "classRef": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "properties": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ProcessorClass": {
+                "type": "object",
+                "properties": {
+                    "ref": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "propertyDescriptors": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "PropertyDescriptor": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "mandatory": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "defaultValue": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "exampleValue": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "confidential": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Dataflow": {
+                "type": "object",
+                "properties": {
+                    "ref": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "bidirectional": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "disabled": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataflowGeneratedInfo": {
+                "type": "object",
+                "properties": {
+                    "executionInstances": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DataflowExecutionInstance": {
+                "type": "object",
+                "properties": {
+                    "ref": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "deviceEUIList": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
