@@ -1,0 +1,188 @@
+{
+    "id": "827710d7da9ac81459f250e5ccb845a2",
+    "name": "ThingPark DX Admin API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "e72738fac87afad6628a5d55dcae4060",
+            "name": "Token Generation",
+            "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/oauth\/token",
+            "description": "Generates and retrieves a token for a client.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "grant_type",
+                    "description": "Type of the OAuth2 grant workflow. Its value should always be 'client_credentials', which is the only workflow currently supported.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "client_id",
+                    "description": "Id of the client. Its format should be 'thingpark-profile\/thingpark-login', e.g. 'dev1-api\/john.smith@actility.com'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "client_secret",
+                    "description": "Secret of the client. Its value should be the password for the ThingPark login specified in the 'client_id' parameter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "renewToken",
+                    "description": "Forces the token to be renewed. If false, and a token already exists for the client, it will be reused. If true, a new token is always returned. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validityPeriod",
+                    "description": "Validity of the new token. Possible values are '5minutes', '12hours', '7days', '90days' or 'infinite' (never expires, until revocation). Default is '7days'. Note that in order to properly use an 'infinite' token, the user password MUST NOT be updated at any time (thus requiring an API-Only user account or a non-expiring-password security policy).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "10c0177b26e83cdb1e17d19a4182e275",
+            "name": "Token Revocation",
+            "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/oauth\/revoke_token",
+            "description": "Revokes a token.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "access_token",
+                    "description": "Value of the token to revoke.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "0abf3d1099d7a9e656fcac744dc4ff53",
+            "name": "Token Info Retrieval",
+            "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/oauth\/tokeninfo",
+            "description": "Retrieves information about a valid token.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "access_token",
+                    "description": "Value of the token to revoke.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "abe77333070b6e9dd5eed2ddebc5d879",
+            "name": "Profiles Retrieval",
+            "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/profiles",
+            "description": "Retrieves all available profiles. By default only retrieves ACTILITY-owned profiles.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "rawModeData": ""
+        },
+        {
+            "id": "e632256223043626156ecc55df9ae4b3",
+            "name": "Profile Retrieval",
+            "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/profiles\/{profileId}",
+            "description": "Retrieves the profile corresponding to the provided profile Id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "profileId",
+                    "description": "Id of the profile to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "rawModeData": ""
+        }
+    ]
+}
