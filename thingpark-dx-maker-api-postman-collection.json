@@ -1,5 +1,5 @@
 {
-    "id": "3d7dd354e1befda40192534624616bfb",
+    "id": "12579af3c56a769630ef718bab435b23",
     "name": "ThingPark DX Maker API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "2f813780b991fc4b0563964529c3f634",
+            "id": "f5b6f4a50dfe8d009d0e0e18d7dae286",
             "name": "Factory devices retrieval",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices",
             "description": "Retrieves all factory devices.",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "1d74f799e3241ca396acc2da0d8f687c",
+            "id": "8ffa6da04d8ea7cadefa9dfbf1faf05e",
             "name": "Factory device creation",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices",
             "description": "Creates a factory device.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "97111539b9d34ef7188ea624e06e029d",
+            "id": "b82e754554d613cde8f73b75b79938f9",
             "name": "Factory device retrieval",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices\/{factoryDeviceRef}",
             "description": "Retrieves the factory device corresponding to the provided factoryDeviceRef.",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "0397d83c1e3102b78d4ac310b9b0d44f",
+            "id": "7a20a05c0ae1db5d69b756fdbd73cf2e",
             "name": "Factory device update",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices\/{factoryDeviceRef}",
             "description": "Updates the factory device corresponding to the provided factoryDeviceRef.",
@@ -144,11 +144,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "7d154dff82c7d7e03fc3f3537548ab19",
+            "id": "bb28b31d9aaf9311dc9fcbf6b45162fe",
             "name": "Factory device deletion",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/factoryDevices\/{factoryDeviceRef}",
             "description": "Deletes the factory device corresponding to the provided factoryDeviceRef.",
@@ -175,11 +175,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "4f0abc4c884d1059458b48b2654cb2cd",
+            "id": "3cb45b95935eea07d4797e219b492a7a",
             "name": "AppKey generation",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/appKeyGens",
             "description": "Generate some encrypted VendorKeys with an HSM. Encrypted VendorKeys can be decrypted with the private part of provided RSA key. A VendorKey is a concatenation of an AppKey (128 bits) and hsmEncryptedAppKey (128 bits). ",
@@ -213,11 +213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "7d38b8dc05b163982c6b02b8768bc277",
+            "id": "053a12f3c9b454f46f189c1581eb6f38",
             "name": "AS keys retrieval",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys",
             "description": "Retrieves the list of AS keys existing within authorized scopes.",
@@ -244,11 +244,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "bd0481f55831fe5f3cc40a5b547f5cd6",
+            "id": "a6e4b8f94736fdc3b83dfb88f59f199a",
             "name": "AS key creation",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys",
             "description": "Creates a new AS key.",
@@ -275,11 +275,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "47d616dc2e4c88ad82bd029717cf6729",
+            "id": "ef05f2e6680807bbc1991ec6cdd5d675",
             "name": "AS key retrieval",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys\/{asKeyRef}",
             "description": "Retrieves the AS key corresponding to the provided AS key ref, if that AS key is within authorized scopes.",
@@ -306,11 +306,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "e987e427b7ee1a3ee0a8480278ad9247",
+            "id": "3c307e70eed4480447de17e824885f4f",
             "name": "AS key update",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys\/{asKeyRef}",
             "description": "Updates the AS key corresponding to the provided asKey ref, if that AS key is within authorized scopes.",
@@ -344,11 +344,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "ab373faceafa33a974aebc7f07c8c34a",
+            "id": "63c96c0288d1624c208b63446e4750b5",
             "name": "AS key deletion",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/asKeys\/{asKeyRef}",
             "description": "Deletes the AS key corresponding to the provided asKeyRef, if that AS key is within authorized scopes.",
@@ -375,11 +375,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         },
         {
-            "id": "0fa33be266a44e3ae59a8e651774acc0",
+            "id": "c081b97e8147768ff990fdf0e3ea2ee9",
             "name": "HSM groups retrieval",
             "url": "httpsdx-api.thingpark.com\/maker\/v011\/api\/hsmGroups",
             "description": "Retrieves all HSM groups.",
@@ -406,7 +406,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3d7dd354e1befda40192534624616bfb",
+            "collectionId": "12579af3c56a769630ef718bab435b23",
             "rawModeData": ""
         }
     ]
