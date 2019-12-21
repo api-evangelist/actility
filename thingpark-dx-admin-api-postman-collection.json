@@ -1,5 +1,5 @@
 {
-    "id": "827710d7da9ac81459f250e5ccb845a2",
+    "id": "d0adbb1d8afedf3ce6c45d26d0514422",
     "name": "ThingPark DX Admin API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "e72738fac87afad6628a5d55dcae4060",
+            "id": "b2cc0448c412bf4d129a1c25e26a004b",
             "name": "Token Generation",
             "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/oauth\/token",
             "description": "Generates and retrieves a token for a client.",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "collectionId": "d0adbb1d8afedf3ce6c45d26d0514422",
             "rawModeData": ""
         },
         {
-            "id": "10c0177b26e83cdb1e17d19a4182e275",
+            "id": "b911426392acc84d4cd3f429d70e3316",
             "name": "Token Revocation",
             "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/oauth\/revoke_token",
             "description": "Revokes a token.",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "collectionId": "d0adbb1d8afedf3ce6c45d26d0514422",
             "rawModeData": ""
         },
         {
-            "id": "0abf3d1099d7a9e656fcac744dc4ff53",
+            "id": "8654b35e6932bc537740b621f6b25db6",
             "name": "Token Info Retrieval",
             "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/oauth\/tokeninfo",
             "description": "Retrieves information about a valid token.",
@@ -127,11 +127,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "collectionId": "d0adbb1d8afedf3ce6c45d26d0514422",
             "rawModeData": ""
         },
         {
-            "id": "abe77333070b6e9dd5eed2ddebc5d879",
+            "id": "c22144abce7da4eed0b3259f9c2d225f",
             "name": "Profiles Retrieval",
             "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/profiles",
             "description": "Retrieves all available profiles. By default only retrieves ACTILITY-owned profiles.",
@@ -150,11 +150,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "collectionId": "d0adbb1d8afedf3ce6c45d26d0514422",
             "rawModeData": ""
         },
         {
-            "id": "e632256223043626156ecc55df9ae4b3",
+            "id": "d7cc23e8e73a31a269e32b7d96fc2729",
             "name": "Profile Retrieval",
             "url": "httpsdx-api.thingpark.com\/admin\/v140\/api\/profiles\/{profileId}",
             "description": "Retrieves the profile corresponding to the provided profile Id.",
@@ -181,7 +181,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "827710d7da9ac81459f250e5ccb845a2",
+            "collectionId": "d0adbb1d8afedf3ce6c45d26d0514422",
             "rawModeData": ""
         }
     ]
