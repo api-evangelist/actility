@@ -1,5 +1,5 @@
 {
-    "id": "35350c9e1464bef309087fefe02834ac",
+    "id": "647886c6c4d05f7006fd7ae176af2f66",
     "name": "ThingPark DX Dataflow API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "f32688cefe41ed59a847ba0fd67925a1",
+            "id": "11a12ad653e70418b515f67838cc97c8",
             "name": "Bridge dataflows retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows",
             "description": "Retrieves the list of Bridge dataflows available in the scope.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "89ca2715c81e00c0375b4155ff65f9b8",
+            "id": "b735b4f30241ecad2ab9a1a0fb597dfc",
             "name": "Bridge dataflow creation",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows",
             "description": "Creates a new Bridge dataflow.",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "1ef868313df3acf97b2aeddb5f4f4a01",
+            "id": "c3c98073658b8555a8725d3901267ec1",
             "name": "Bridge dataflow retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows\/{bridgeDataflowRef}",
             "description": "Retrieves the Bridge dataflow corresponding to the provided order ref, if that order is within authorized scopes.",
@@ -91,11 +91,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "878257c962ed8234a3489d6f0c12808f",
+            "id": "c416a4a8a0568195aaa3c76062d00334",
             "name": "Bridge dataflow update",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows\/{bridgeDataflowRef}",
             "description": "Updates the Bridge dataflow corresponding to the provided Bridge dataflow ref, if that dataflow is within authorized scopes. Note that when updating a dataflow, all existing attributs must be provided next to your changes.",
@@ -129,11 +129,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "8eac243b6ed954fee1c58e9a6baebe8e",
+            "id": "9fab4688c91d123145a9bfdff65141c1",
             "name": "Bridge dataflow deletion",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/bridgeDataflows\/{bridgeDataflowRef}",
             "description": "Deletes the Bridge dataflow corresponding to the provided Bridge dataflow ref, if that dataflow is within authorized scopes.",
@@ -160,11 +160,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "97a22d0d1fe87913c682c270dac048f4",
+            "id": "5bfb4f660e0a35d86d456d408ec34e02",
             "name": "Constant maps retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps",
             "description": "Retrieves the list of constant maps (both system-provided and custom) available in the scope.",
@@ -183,11 +183,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "dbe5be7ffe662a74f5b4ad2cdc898c6b",
+            "id": "5bd9188cfd875f695982bfda5ebb7624",
             "name": "Constant maps creation",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps",
             "description": "Creates a new custom constant map for the subscriber.",
@@ -214,11 +214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "fd8252d63f08bcea5fcbba58db14f933",
+            "id": "b85e3cbb608e84d2928f1700f1cf7060",
             "name": "Constant map retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps\/{constantMapRef}",
             "description": "Retrieves the constant map corresponding to the provided constant map ref..",
@@ -245,11 +245,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "080e4d7877c29ba4d2d56a9abaa3a1a3",
+            "id": "ed26299451423cb99fc05f43fdf4a25f",
             "name": "Constant map update",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps\/{constantMapRef}",
             "description": "Updates the constant map corresponding to the provided constant map ref. This is only authorized if the constant map has been created by the subscriber (not provided by the system).",
@@ -283,11 +283,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "516797f555614b13f00dd0395ba269ce",
+            "id": "4dc64d02a216afab8d97b45e2a10692a",
             "name": "Constant map deletion",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/constantMaps\/{constantMapRef}",
             "description": "Deletes the constant map corresponding to the provided constant map ref. This is only authorized if the constant map has been created by the subscriber (not provided by the system).",
@@ -314,11 +314,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "ebd13b127468cfb2777309b7b6ca4fe7",
+            "id": "e6abb61ec87880df6433c076760306de",
             "name": "Binder processor classes retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/binderClasses",
             "description": "Retrieves the list of system-wide processor classes providing binder (e.g. with a device) behaviour.",
@@ -337,11 +337,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "3b487b1746d741672f1429fe13eef0ae",
+            "id": "602fd2ff39edac713ecc19c54e175342",
             "name": "Driver processor classes retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/driverClasses",
             "description": "Retrieves the list of system-wide processor classes providing driver behaviour.",
@@ -360,11 +360,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "9846e1f5b775377754a2ee9ac8d583d0",
+            "id": "be5791b0e789af2936522ed96e1300b2",
             "name": "Connector processor classes retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/connectorClasses",
             "description": "Retrieves the list of system-wide processor classes providing connector behaviour.",
@@ -383,11 +383,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "9919c3551e9c1b028c386c68659ed6bc",
+            "id": "7bd19e24d2c435a01eabbe184d45e23f",
             "name": "Dataflow events retrieval",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/events",
             "description": "Retrieves the list of events for all configured dataflows in scope.",
@@ -414,11 +414,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         },
         {
-            "id": "82d3f8c0a674ed9f6e3ce6ba30361aa5",
+            "id": "a192a40803c5fc03a3471fbe653ee79a",
             "name": "Uplink data reception",
             "url": "httpsdx-api.thingpark.com\/dataflow\/v021\/api\/uplinkMessages",
             "description": "Endpoint to be used by the LRC to push uplink data in order to use ThingPark X dataflows.",
@@ -445,7 +445,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "35350c9e1464bef309087fefe02834ac",
+            "collectionId": "647886c6c4d05f7006fd7ae176af2f66",
             "rawModeData": ""
         }
     ]
