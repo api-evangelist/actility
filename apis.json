@@ -20,8 +20,8 @@
         "sensors",
         "telecommunications"
     ],
-    "created": "2019-12-18",
-    "modified": "2019-12-18",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/actility\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -35,11 +35,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-admin-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/actility\/master\/thingpark-dx-admin-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-admin-api-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-admin-api.json"
                 }
             ]
         },
@@ -53,11 +53,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-location-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/actility\/master\/thingpark-dx-location-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-location-api-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-location-api.json"
                 }
             ]
         },
@@ -71,11 +71,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-maker-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/actility\/master\/thingpark-dx-maker-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-maker-api-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-maker-api.json"
                 }
             ]
         },
@@ -89,17 +89,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-dataflow-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/actility\/master\/thingpark-dx-dataflow-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/thingpark-dx-dataflow-api-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/thingpark-dx-dataflow-api.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Blog RSS",
             "url": "https:\/\/www.actility.com\/blog\/feed\/"
